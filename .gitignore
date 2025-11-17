@@ -1,0 +1,12 @@
+# Dependencies
+/node_modules
+/backend/venv
+/backend/__pycache__
+
+# Logs and Data
+/data
+*.log
+
+# Environment
+.env
+.env.*

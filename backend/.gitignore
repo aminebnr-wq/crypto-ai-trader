@@ -1,0 +1,14 @@
+.env
+.env.local
+*.pyc
+__pycache__/
+venv/
+.vscode/
+.idea/
+*.log
+data/*.db
+data/*.json
+models/*.h5
+models/*.pkl
+.DS_Store
+*.swp
