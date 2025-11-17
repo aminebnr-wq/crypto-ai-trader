@@ -1,3 +1,5 @@
+# Python 3.13 Compatibility - Alternative Strategy
+
 # Core Dependencies
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
@@ -9,13 +11,11 @@ pydantic-settings==2.1.0
 python-binance==1.0.19
 ccxt==4.1.65
 
-# AI & Machine Learning
+# AI & Machine Learning (Updated for Python 3.13)
 tensorflow==2.20.0
 scikit-learn==1.5.2
-pandas==2.2.2
-numpy==1.26.2
-
-
+pandas==2.6.2  # Latest stable pandas for Python 3.13
+numpy==2.2.2   # Latest stable numpy for Python 3.13
 
 # Sentiment Analysis & NLP
 transformers==4.35.2
