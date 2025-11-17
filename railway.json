@@ -1,0 +1,36 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "name": "AI Crypto Trader",
+  "services": [
+    {
+      "name": "Backend API",
+      "project_name": "crypto-ai-trader-backend",
+      "buildCommand": "pip install -r backend/requirements.txt",
+      "startCommand": "uvicorn main:app --host 0.0.0.0 --port $PORT",
+      "rootPath": "backend",
+      "environment": {
+        "PYTHON_VERSION": "3.11",
+        "LOG_LEVEL": "INFO",
+        "DATA_DIR": "/app/data"
+      },
+      "variables": [
+        "BINANCE_API_KEY",
+        "BINANCE_SECRET_KEY",
+        "NEWS_API_KEY",
+        "TWITTER_BEARER_TOKEN",
+        "TELEGRAM_BOT_TOKEN",
+        "TELEGRAM_CHAT_ID",
+        "EMAIL_HOST",
+        "EMAIL_PORT",
+        "EMAIL_USER",
+        "EMAIL_PASSWORD",
+        "NOTIFICATION_EMAIL",
+        "WATCH_COINS",
+        "MIN_CONFIDENCE_SCORE",
+        "TARGET_PROFIT_PERCENT",
+        "STOP_LOSS_PERCENT",
+        "MAX_TRADE_AMOUNT_USDT"
+      ]
+    }
+  ]
+}
